@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHMSolution - Pure CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logic Controllers (Hidden) -->
+    <input type="radio" name="page-flow" id="show-signin" checked>
+    <input type="radio" name="page-flow" id="show-login">
+    <input type="radio" name="page-flow" id="show-home">
+
+    <div class="container">
+        
+        <!-- Page 1: Sign In -->
+        <section class="page" id="signin-section">
+            <div class="form-card">
+                <h2>Sign Up</h2>
+                <p>Create your NHMSolution account</p>
+                <input type="text" placeholder="Name">
+                <input type="password" placeholder="Password">
+                <label for="show-login" class="btn">Sign In</label>
+            </div>
+        </section>
+
+        <!-- Page 2: Login -->
+        <section class="page" id="login-section">
+            <div class="form-card">
+                <h2>Login</h2>
+                <p>Enter credentials to continue</p>
+                <input type="text" placeholder="Name">
+                <input type="password" placeholder="Password">
+                <label for="show-home" class="btn">Login</label>
+            </div>
+        </section>
+
+        <!-- Page 3: Home -->
+        <section class="page" id="home-section">
+            <div class="form-card">
+                <h1 class="welcome-msg">Welcome to NHMSolution</h1>
+                <p>CSS-only navigation successful.</p>
+                <label for="show-signin" class="btn logout-btn">Logout</label>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
